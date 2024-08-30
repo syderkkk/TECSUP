@@ -1,5 +1,7 @@
 package semana2.teo;
 
+// Elabore una clase PRODUCTO con 3 atributos e implemente encapsulamiento
+
 public class Producto {
 
     private String codigo;

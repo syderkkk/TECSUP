@@ -1,5 +1,7 @@
 package semana2.teo;
 
+// Elabore una clase EMPLEADO con 4 atributos y un constructor sin parámetros y otro con parámetros
+
 public class Empleado {
 
     String nombre;
