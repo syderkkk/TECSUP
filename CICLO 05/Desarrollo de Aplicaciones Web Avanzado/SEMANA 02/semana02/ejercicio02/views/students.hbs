@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <style>
+        .resaltado { color: green; font-weight: bold; }
+        table { border-collapse: collapse; width: 50%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Nota</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each listado}}
+            <tr>
+                <td>{{this.nombre}}</td>
+                <td>{{this.nota}}</td>
+                <td>
+                    {{!-- Usamos una lógica de ejemplo para el #if --}}
+                    {{#if (gte this.nota 15)}} 
+                        <span class="resaltado">¡Excelente!</span>
+                    {{else}}
+                        <span>Regular</span>
+                    {{/if}}
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+</html>
