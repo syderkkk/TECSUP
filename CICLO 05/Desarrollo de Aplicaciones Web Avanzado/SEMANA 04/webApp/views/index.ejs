@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+
+  <section class="hero-panel text-center text-md-start">
+    <span class="eyebrow">Soluciones digitales</span>
+    <h1 class="hero-title"><%= title %></h1>
+    <p class="hero-text"><%= mensaje %></p>
+    <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+      <a href="/nosotros" class="btn btn-dark px-4">Conocenos</a>
+      <a href="/contactenos" class="btn btn-outline-secondary px-4">Contactanos</a>
+    </div>
+  </section>
+
+  <section class="mt-5">
+    <h2 class="section-title">Por que elegirnos</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card card-soft border rounded-4 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Rapido</h5>
+            <p class="card-text">Aplicaciones optimizadas para ofrecer carga eficiente y respuesta fluida.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-soft border rounded-4 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Moderno</h5>
+            <p class="card-text">Interfaz clara y adaptable a cualquier pantalla con una lectura comoda.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-soft border rounded-4 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Escalable</h5>
+            <p class="card-text">Estructura en EJS reutilizable para seguir creciendo sin friccion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<%- include('partials/footer') %>

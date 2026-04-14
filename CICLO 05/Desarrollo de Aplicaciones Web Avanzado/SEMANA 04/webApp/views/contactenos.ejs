@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+  <section class="page-header">
+    <span class="eyebrow">Hablemos</span>
+    <h1 class="hero-title"><%= title %></h1>
+  </section>
+
+  <div class="row g-4">
+    <div class="col-md-5">
+      <div class="card card-soft border rounded-4 shadow-sm p-4 h-100">
+        <h5 class="mb-1">Email</h5>
+        <p><%= email %></p>
+        <h5 class="mb-1">Telefono</h5>
+        <p><%= telefono %></p>
+        <a href="/" class="btn btn-outline-secondary">Volver al inicio</a>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="card card-soft border rounded-4 shadow-sm p-4">
+        <h5 class="mb-3">Envíanos un mensaje</h5>
+        <div class="mb-3">
+          <label class="form-label" for="nombre">Nombre</label>
+          <input id="nombre" type="text" class="form-control" placeholder="Tu nombre" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="correo">Correo electronico</label>
+          <input id="correo" type="email" class="form-control" placeholder="correo@ejemplo.com" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="mensaje">Mensaje</label>
+          <textarea id="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+        </div>
+        <button class="btn btn-dark w-100">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+
+<%- include('partials/footer') %>
